@@ -1,0 +1,150 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+* {margin: 0;padding: 0;border: 0;box-sizing: border-box;line-height: 1.1; outline: none;font-weight: 400;font-size: 18px;}
+ul,ol,li,h1,h2,h3,h4,h5,h6,a,p {text-decoration: none;list-style: none;margin: 0;outline: none;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{font-weight: inherit;line-height: inherit;}
+img {max-width: 100%;display: block;}
+body{margin: 0;font-family: 'segoe ui';}
+.wrapper{padding: 0 80px;}
+.containerWidth{max-width: 1440px;margin: 0 auto;}
+
+
+
+nav{display: flex;align-items: center;justify-content: space-between;padding: 20px 0px;}
+header .navBottom{background: #f9f9f9;}
+.hamburger{display: none;}
+.customNavbar{display: flex;align-items: center;width: calc(100% - 600px);}
+.customNavbar .logo{width: 100px;}
+.customNavbar ul{list-style: none;padding-left: 30px;}
+.customNavbar ul li{display: inline-block;padding: 0 15px;}
+.customNavbar ul li a{color: #000;font-weight: 600;text-transform: uppercase;text-decoration: none;font-size: 16px;}
+.searchUserInfo{display: flex;align-items: center;width: 600px;}
+.inputSearch{width: calc(100% - 260px);display: flex;align-items: center;justify-content: space-between;margin-right: 40px;background: #fff;border-radius: 30px;}
+.inputSearch input{background: transparent;border: 0;outline: none;width: calc(100% - 40px);padding-left: 20px;}
+.inputSearch img{width: 40px;}
+.userInfo{display: flex;align-items: center;width: 260px;}
+.userInfo p{padding-right: 10px;}
+.userInfo .userDropDown{padding: 0 10px;padding-right: 20px; border-right: 1px solid #000;border-left: 1px solid #000;position: relative;}
+.userInfo .userDropDown::after{content: '';position: absolute;background-image: url('../../frontend/images/arrow.png');height: 10px;width: 10px;right: 5px;background-size: 10px;background-repeat: no-repeat;top: 0;bottom: 0;margin: auto;}
+.userInfo .userDropDown h4{font-size: 10px;text-align: right;}
+.userInfo .userDropDown h3{font-size: 16px;font-weight: 600;text-align: right;}
+.userInfo .userDropDown .dropDown{display: none;position: absolute;right: 0;text-align: right;padding: 10px;box-shadow: 0 0 4px;}
+.userInfo .userDropDown .dropDown a{display: block;}
+.userInfo .userDropDown:hover .dropDown{display: block;}
+.userInfo .whislist{width: 50px;display: block;padding: 0 10px;border-right: 1px solid #000;}
+.userInfo .cart{width: 40px;display: block;padding-left: 10px;}
+.navTop{background-color: #1f2a7b;padding: 10px 0;}
+.navTop p{text-align: center;color: #fff;}
+
+.bannerSection{position: relative;background-image: url('../../frontend/images/banner.png');background-repeat: no-repeat;background-size: cover;background-position: center;}
+.textOverImg{padding: 100px 0px;}
+.textOverImg h1{font-size: 36px;font-weight: bold;color: #fff;text-transform: uppercase;}
+.textOverImg p{font-size: 20px;font-weight: 600;color: #fff;padding: 20px 0 40px;}
+.textOverImg a{background-color: #f94144;font-size: 20px;border-radius: 50px;text-transform: uppercase;padding: 30px;color: #fff;font-weight: 600;padding: 10px 40px;}
+.checkboxContainer{background-color: #fff;padding: 20px;border-radius: 50px;margin-top: -25px;position: relative;box-shadow: 4px 4px 14px 5px #d5d5d533;}
+.containerInput {border-right: 1px solid #000;text-transform: uppercase;display: block;position: relative;padding-left: 30px;cursor: pointer;font-size: 13px;font-weight: bold;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.containerInput:last-child{border-right: 0;}
+.containerInput input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.checkmark {position: absolute;top: -2px;left: 0;height: 20px;width: 20px;background-color: #eee;border-radius: 5px;}
+.containerInput:hover input ~ .checkmark {background-color: #ccc;}
+.containerInput input:checked ~ .checkmark {background-color: #000;}
+.checkmark:after {content: "";position: absolute;display: none;}
+.containerInput input:checked ~ .checkmark:after {display: block;}
+.containerInput .checkmark:after {left: 8px;top: 4px;width: 5px;height: 10px;border: solid white;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+.categoriesSection{padding: 80px 0 40px;background-color: #f8f8f8;margin-top: -40px;}
+.categoriesSectionInner h2{font-size: 18px;font-weight: bold;color:#000;text-transform: uppercase;}
+.categoriesSectionInner p{font-size: 16px;color: #000;margin-top: 10px;font-weight: 300;}
+.categoriesCard{text-align: center;margin-top: 30px;position: relative;overflow: hidden;border-radius: 30px;background-color: #fff;}
+.categoriesCardImg img{width: 100%;}
+.categoriesCard h3{font-size: 18px;font-weight: bold;color:#000;text-transform: uppercase;padding: 20px 0;}
+.findSection{background-color: #f3f3f3;padding: 40px 0;}
+.findSectionInner h2{font-size: 18px;font-weight: bold;color:#000;text-transform: uppercase;}
+.findSectionInner p{font-size: 16px;color: #000;margin-top: 10px;font-weight: 300;}
+.findCard{position: relative;overflow: hidden;border-radius: 20px;background-color: #fff;}
+.findTextOverlay{position: absolute;left: 50%;transform: translateX(-50%);bottom: 80px;}
+.findTextOverlay h3{text-transform: uppercase;font-weight: bold;font-size: 20px;color: #fff;}
+.findCard h4{text-transform: uppercase;font-size: 16px;font-weight: 600;padding: 20px;text-align: center;}
+.productSection{background-color: #f9f9f9;}
+.productHeading h2{font-size: 18px;font-weight: bold;color:#000;text-transform: uppercase;}
+.productHeading p{font-size: 16px;color: #000;margin-top: 10px;font-weight: 300;}
+.productSlider{margin: 0 -20px;}
+.productSliderInner{position: relative;overflow: hidden;border-radius: 30px;background-color: #fff;text-align: center;margin: 0 20px;}
+.productSliderInner h3{font-size: 15px;}
+.productSliderInner h4{font-size: 14px;font-weight: 300;}
+.productSliderInner p{font-size: 16px;font-weight: bold;}
+.productSliderInner p span{font-size: 15px;font-weight: 400;color: #ce2222;text-decoration: line-through;}
+.starImg img{margin: auto;}
+.productImg img{width: 100%;}
+.productSliderWrapper{position: relative;}
+.sliderArrow button{outline: none;position: absolute;background: transparent;top: 50%;}
+.sliderArrow .lifeSliderBack{left: -60px;}
+.sliderArrow .lifeSliderForward{right: -70px;}
+.lookingSection{background: #f3f3f3;}
+.lookingCard div{height: 300px;box-shadow: 4px 4px 14px 5px #c5c5c5d1;}
+.headerMenu li{position: relative;}
+.headerMenu li.active::before{content: '';position: absolute;width: 40%;height: 3px;background: #ce2222;bottom: -7px;left: 0;right: 0;margin: auto;}
+.headerMenu li:hover::before{content: '';position: absolute;width: 40%;height: 3px;background: #ce2222;bottom: -7px;left: 0;right: 0;margin: auto;}
+
+@media all and (max-width: 1600px) {}
+@media all and (max-width: 1400px) {
+    .customNavbar ul{padding-left: 50px;}
+    .customNavbar ul li{padding: 0 10px;}
+    .customNavbar ul li a{font-size: 16px;}
+    .checkboxHolder{width: 100%;}
+}
+@media all and (max-width: 1280px) {}
+@media all and (max-width: 1200px) {
+    .customNavbar{width: auto;}
+    .customNavbar .logo{width: 80px;}
+    .customNavbar ul li{padding: 0 8px;}
+    .customNavbar ul li a{font-size: 14px;}
+    .inputSearch {margin-right: 20px;}
+    .customNavbar ul{padding-left:10px}
+    .searchUserInfo{width: auto;}
+    .containerInput{padding-right: 20px;margin-left: 20px;font-size: 14px;}
+    .checkmark{top: -5px;}
+    .sliderArrow button{width: 20px;}
+    .sliderArrow .lifeSliderBack {left: -30px;}
+    .sliderArrow .lifeSliderForward {right: -30px;}
+}
+@media all and (max-width: 1080px) {}
+@media all and (max-width: 900px) {
+    header .container-lg{padding: 0;}
+    nav{position: relative;padding: 20px 13px;}
+    .userInfo{width: auto;}
+    .customNavbar ul{position: absolute;width: 100%;top: 70px;left: 0;padding: 20px;padding-top: 0;display: none;background-color: #fff;}
+    .customNavbar ul.active{display: block;z-index: 1;}
+    .customNavbar ul li{display: block;padding: 10px;}
+    .customNavbar ul li:first-child{padding-top: 0;}
+    .hamburger{display: block;position: absolute;right: 30px;}
+    .hamburger .line{width: 35px;height: 4px;background-color: #000;display: block;margin: 8px auto;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+    .hamburger:hover{cursor: pointer;}
+    #hamburger-1.is-active .line:nth-child(2){opacity: 0;}
+    #hamburger-1.is-active .line:nth-child(1){-webkit-transform: translateY(13px) rotate(45deg);-ms-transform: translateY(13px) rotate(45deg);-o-transform: translateY(13px) rotate(45deg);transform: translateY(13px) rotate(45deg);}
+    #hamburger-1.is-active .line:nth-child(3){-webkit-transform: translateY(-11px) rotate(-45deg);-ms-transform: translateY(-11px) rotate(-45deg);-o-transform: translateY(-11px) rotate(-45deg);transform: translateY(-11px) rotate(-45deg);}
+    .inputSearch{display: none;}
+    .userInfo p{display: none;}
+    .userInfo .userDropDown{display: none;}
+    .searchUserInfo{width: auto;padding-right: 60px;}
+    .categoriesCard{width: 26%;}
+    .checkboxHolder,.findHolder{flex-flow: wrap;}
+    .containerInput{padding: 10px 0;margin-left: 35px;border-right: 0;}
+    .checkmark{top: 5px;left: -35px;}
+    .findCard{width: 100%;}
+    .findCard:last-child{margin-top: 30px;}
+    .findTextOverlay h3{font-size: 18px;}
+    .findTextOverlay h4{font-size: 16px;padding: 5px 0 10px;}
+    .findTextOverlay a{font-size: 14px;}
+    .checkboxContainer{padding: 20px 0;border-radius: 0;margin-top: 0;box-shadow: none;}
+    .categoriesSection{margin-top: 0;padding: 40px 0;}
+    .sliderArrow{display: none;}
+    .productSlider{margin: 0;}
+    .productSlider .slick-dots{bottom: -35px;}
+    .productSlider .slick-dots li button:before{font-size: 20px;}
+    .lookingCard div{margin: 20px 0;}
+    .headerMenu li.active::before{content: '';position: absolute;width: 100%;height: 3px;background: #ce2222;bottom: 0px;left: 0;right: unset;margin: auto;}
+}
+@media all and (max-width: 770px) {}
+@media all and (max-width: 768px) {}
+@media all and (max-width: 760px) {}
+@media all and (max-width: 640px) {}
